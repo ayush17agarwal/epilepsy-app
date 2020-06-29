@@ -5,27 +5,33 @@ let UserSession = require('../models/userSession.model');
 router.route('/name').get((req, res) => {
     const { query } = req;
     const { token } = query;
-
     UserSession.find({
         _id: token,
         isDeleted: false
-    }, (err, session) => {
-        const { userId } = session;
+    }, (err, sessions) => {
+        const session = sessions[0];
         User.find({
-            _id: userId,
-        }, (error, user) => {
-            if (user.length != 1) {
+            _id: session.userId,
+        }, (error, users) => {
+            if (error) {
                 return res.send({
                     success: false,
-                    message: 'Not able to find User',
+                    message: 'Error: internal server error',
+                    name: null
+                });
+            }
+            if (users.length != 1) {
+                return res.send({
+                    success: false,
+                    message: 'Error: wrong user',
                     name: null
                 });
             } else {
                 return res.send({
                     success: true,
                     message: 'Success',
-                    name: user.name
-                })
+                    name: users[0].name
+                });
             }
         })
     })

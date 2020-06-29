@@ -27,10 +27,12 @@ connection.once('open', () => {
 // app.use('/users', usersRouter);
 // app.use('/types', typesRouter);
 // app.use('/meds', medsRouter);
+const userRouter = require('./routes/users');
 const signUpRouter = require('./routes/signUp');
 const signInRouter = require('./routes/signIn');
 const logOutRouter = require('./routes/logOut');
 
+app.use('/user', userRouter);
 app.use('/signup', signUpRouter);
 app.use('/signin', signInRouter);
 app.use('/logout', logOutRouter);
