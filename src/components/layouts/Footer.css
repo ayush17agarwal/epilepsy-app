@@ -1,0 +1,23 @@
+.deco-none {
+    color: inherit;
+    text-decoration: none;
+}
+
+.deco-none:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+    min-height: 100%;
+    display: block;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+#sticky-footer {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+}

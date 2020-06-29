@@ -1,30 +1,48 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
+const bcrypt = require('bcrypt');
 
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const UserSchema = new Schema({
     name: {
         type: String,
         required: true,
-        trim: true
+        trim: true,
+        default: ''
     },
     dob: {
         type: Date,
         required: true,
     },
-    username: {
+    email: {
         type: String,
         required: true,
+        default: '',
         unique: true,
-        trim: true,
-        uniqueCaseInsensitive: true,
-        minlength: 4
-    }
+        trim: true
+    },
+    password: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    isDeleted: {
+        type: Boolean,
+        default: false
+    },
+    types: [],
+    medicines: []
 });
 
-userSchema.plugin(uniqueValidator);
+UserSchema.plugin(uniqueValidator);
 
-const User = mongoose.model('User', userSchema);
+UserSchema.methods.generateHash = function (password) {
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+};
 
-module.exports = User;
+UserSchema.methods.validatePassword = function (password) {
+    return bcrypt.compareSync(password, this.password);
+};
+
+module.exports = mongoose.model('User', UserSchema);

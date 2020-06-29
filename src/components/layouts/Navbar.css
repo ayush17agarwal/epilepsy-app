@@ -1,0 +1,18 @@
+.top-nav-collapse {
+  background-color: transparent !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: #ffa990 !important;
+}
+
+a.nav_link {
+  text-decoration: none;
+  color: white;
+}
+
+a.nav_link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}

@@ -18,6 +18,7 @@ const medicineSchema = new Schema({
     dosageSuffix: {
         type: String,
         required: true,
+        maxlength: 5
     },
     timesGiven: {
         type: [String],

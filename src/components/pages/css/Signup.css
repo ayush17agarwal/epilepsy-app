@@ -1,0 +1,21 @@
+.text-center {
+    text-align: center!important;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.form-signup {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+
+.password-reqs {
+    font-size: small;
+    text-align: left;
+}
+
+h6 {
+    text-align: left;
+}

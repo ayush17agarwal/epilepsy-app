@@ -1,0 +1,35 @@
+.background {
+    background-color: #ffd1c3;
+    height: 100%;
+}
+
+.view {
+    height: 100%;
+}
+
+a.link {
+    text-decoration: none;
+    color: red;
+}
+
+a.link:hover {
+text-decoration: none;
+cursor: pointer;
+color: purple;
+}
+
+.btn-round {
+    border-radius: 23px;
+}
+
+.hr-white {
+    border-top: 1px solid white;
+}
+
+.statistics {
+    background-color: purple;
+}
+
+.stats-container {
+    width: 600px;
+}

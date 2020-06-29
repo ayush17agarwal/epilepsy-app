@@ -7,9 +7,7 @@ const typeSchema = new Schema({
     name: {
         type: String,
         required: true,
-        trim: true,
-        unique: true,
-        uniqueCaseInsensitive: true
+        trim: true
     },
     description: {
         type: String,
