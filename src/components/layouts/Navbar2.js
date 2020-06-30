@@ -16,6 +16,10 @@ class Navbar extends Component {
         this.onLogOut = this.onLogOut.bind(this);
     }
 
+    onComponentDidMount() {
+        window.location = "/dashboard";
+    }
+
 
     onLogOut(event) {
         event.preventDefault();

@@ -55,8 +55,6 @@ class Signup extends Component {
             password: this.state.signupPassword,
         };
 
-        console.log(user);
-
         axios.post('http://localhost:5000/signup/', user)
             .then(res => {
                 if (res.data.success) {
@@ -77,6 +75,8 @@ class Signup extends Component {
     }
 
     render() {
+        document.body.style.backgroundColor = "#ffbdaa";
+
         const {
             signupDob,
             signupEmail,

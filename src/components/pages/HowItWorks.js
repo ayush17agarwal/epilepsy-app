@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './css/HowItWorks.css';
 
 class HowItWorks extends Component {
+
     render() {
+        document.body.style.backgroundColor = "#ff90af";
         return (
             <div className="accordian-container">
                 <div className="accordion" id="myaccordian">

@@ -6,7 +6,12 @@ router.route('/').post((req, res) => {
     const email = req.body.email;
     const password = req.body.password;
     const dob = Date.parse(req.body.dob);
-
+    if (password.length < 8) {
+        return res.send({
+            success: false,
+            message: 'Error: Enter a better password'
+        });
+    }
     User.find({
         email: email
     }, (err, previousUsers) => {

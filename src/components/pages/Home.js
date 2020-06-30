@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 class Home extends Component {
 
     render() {
+        document.body.style.backgroundColor = "#ffd1c3";
         return (
             <div className="view">
-                <div className="mask background d-flex justify-content-center align-items-center">
+                <div className="mask d-flex justify-content-center align-items-center">
                     <div className="container px-md-3 px-sm-0">
                         <div className="row wow fadeIn">
                             <div className="col-md-12 mb-4 text-white text-center wow fadeIn">

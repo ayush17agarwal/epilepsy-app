@@ -3,8 +3,7 @@
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: #EC799A !important;
-  /*background: #ffa990 !important;*/
+  background: #ffa990 !important;
 }
 
 a.nav_link {

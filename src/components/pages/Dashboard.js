@@ -16,7 +16,7 @@ class Dashboard extends Component {
         };
     }
     componentDidMount() {
-        document.body.style.backgroundColor = "#E0CC97";
+        document.body.style.backgroundColor = "#ffd1c3";
         const obj = getFromStorage('epi_tracker_app');
 
         if (obj && obj.token) {
@@ -48,15 +48,15 @@ class Dashboard extends Component {
             <div className="container">
                 <h1 className="mt-5 text-center">Welcome to your dashboard, {this.state.dashboardName}!</h1>
 
-                <div className="card-deck mb-5 justify-content-center">
-                    <div className="card col-md-4 text-center">
+                <div className="card-deck mb-3 justify-content-center">
+                    <div className="card border col-md-4 text-center">
                         <div className="card-body">
                             <h5 className="card-title">Your Common Types</h5>
                             <p className="card-text">Holy moly. Lorem blah blah</p>
                             <button className="btn btn-primary"><Link to="/types" className="nav_link">Types</Link></button>
                         </div>
                     </div>
-                    <div className="card col-md-4 text-center">
+                    <div className="card border col-md-4 text-center">
                         <div className="card-body">
                             <h5 className="card-title">Your Medicines</h5>
                             <p className="card-text">Holy moly. Loren blah blah blah.</p>
@@ -65,14 +65,14 @@ class Dashboard extends Component {
                     </div>
                 </div>
                 <div className="card-deck justify-content-center">
-                    <div className="card col-md-4 text-center">
+                    <div className="card border col-md-4 text-center">
                         <div className="card-body">
                             <h5 className="card-title">Your Events</h5>
                             <p className="card-text">Holy moly. Lorem blah blah blah blah.</p>
                             <button className="btn btn-primary"><Link to="/events" className="nav_link">Events</Link></button>
                         </div>
                     </div>
-                    <div className="card col-md-4 text-center">
+                    <div className="card border col-md-4 text-center">
                         <div className="card-body">
                             <h5 className="card-title">Analyze the Data</h5>
                             <p className="card-text">Holy moly. Lorem blah blah blah blah.</p>

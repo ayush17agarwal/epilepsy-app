@@ -11,7 +11,6 @@ router.route('/verify').get((req, res) => {
         _id: token,
         isDeleted: false
     }, (err, sessions) => {
-        console.log(sessions);
         if (err) {
             return res.send({
                 success: false,
@@ -64,7 +63,6 @@ router.route('/').post((req, res) => {
         userSession.userId = user._id;
         userSession.save()
             .then((doc) => {
-                console.log(doc);
                 res.json({
                     success: true,
                     message: "Session created!",

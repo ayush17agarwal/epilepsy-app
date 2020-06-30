@@ -64,6 +64,7 @@ class Signin extends Component {
     }
 
     render() {
+        document.body.style.backgroundColor = "#ffbdaa";
 
         const {
             signinEmail,
@@ -74,7 +75,7 @@ class Signin extends Component {
 
         return (
             <div className="text-center">
-                <h3 className="h3 my-5 font-weight-normal">Sign in to gain access to all your data.</h3>
+                <h2 className="h2 my-5 font-weight-normal">Sign in to gain access to all your data.</h2>
                 <form className="form-signin">
                     <br />
                     {

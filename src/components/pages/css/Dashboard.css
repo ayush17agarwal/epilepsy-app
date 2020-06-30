@@ -5,7 +5,10 @@ a.nav_link {
 
 a.nav_link:hover {
     text-decoration: none;
-cursor: pointer;
-color: white;
+    cursor: pointer;
+    color: white;
 }
 
+div.border {
+    border-radius: 15px;
+}
