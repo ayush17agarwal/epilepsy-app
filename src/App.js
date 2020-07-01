@@ -11,12 +11,12 @@ import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import Signin from './components/pages/Signin';
 import Signup from './components/pages/Signup';
-import Dashboard from './components/pages/Dashboard';
-import Profile from './components/pages/Profile';
-import Types from './components/pages/Types';
-import Medicines from './components/pages/Medicines';
-import Analysis from './components/pages/Analysis';
-import Events from './components/pages/Events';
+import Dashboard from './components/pages/post-login/Dashboard';
+import Profile from './components/pages/post-login/Profile';
+import Types from './components/pages/post-login/Types';
+import Medicines from './components/pages/post-login/Medicines';
+import Analysis from './components/pages/post-login/Analysis';
+import Events from './components/pages/post-login/Events';
 
 class App extends Component {
   constructor(props) {

@@ -74,7 +74,7 @@ class Signin extends Component {
 
 
         return (
-            <div className="text-center">
+            <div className="text-center-signin py-5">
                 <h2 className="h2 my-5 font-weight-normal">Sign in to gain access to all your data.</h2>
                 <form className="form-signin">
                     <br />

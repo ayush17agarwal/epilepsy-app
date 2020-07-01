@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { getFromStorage } from './../../utils/storage';
-import { capitalize } from './../../utils/util';
+import { getFromStorage } from '../../../utils/storage';
+import { capitalize } from '../../../utils/util';
 import { Link } from 'react-router-dom';
-import './css/Dashboard.css'
+import './../css/Dashboard.css';
 
 class Dashboard extends Component {
 
@@ -46,7 +46,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="container">
-                <h1 className="mt-5 text-center">Welcome to your dashboard, {this.state.dashboardName}!</h1>
+                <h1 className="mt-5 text-center py-5">Welcome to your dashboard, {this.state.dashboardName}!</h1>
 
                 <div className="card-deck mb-3 justify-content-center">
                     <div className="card border col-md-4 text-center">
