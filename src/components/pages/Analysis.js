@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-class Profile extends Component {
+class Analysis extends Component {
     render() {
         document.body.style.backgroundColor = "white";
         return (
             <div>
-                <p>Profile page</p>
+                <p>Analysis page</p>
             </div>
         );
     }
 
 }
 
-export default Profile;
+export default Analysis;

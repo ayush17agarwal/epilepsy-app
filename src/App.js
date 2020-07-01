@@ -13,6 +13,10 @@ import Signin from './components/pages/Signin';
 import Signup from './components/pages/Signup';
 import Dashboard from './components/pages/Dashboard';
 import Profile from './components/pages/Profile';
+import Types from './components/pages/Types';
+import Medicines from './components/pages/Medicines';
+import Analysis from './components/pages/Analysis';
+import Events from './components/pages/Events';
 
 class App extends Component {
   constructor(props) {
@@ -103,6 +107,10 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/profile" component={Profile} />
+          <Route path="/types" component={Types} />
+          <Route path="/events" component={Events} />
+          <Route path="/medicines" component={Medicines} />
+          <Route path="/analysis" component={Analysis} />
 
         </Switch>
         <Footer />

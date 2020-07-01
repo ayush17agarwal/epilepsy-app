@@ -1,7 +1,3 @@
-.view {
-    height: 100%;
-}
-
 a.link {
     text-decoration: none;
     color: red;
@@ -10,7 +6,7 @@ a.link {
 a.link:hover {
 text-decoration: none;
 cursor: pointer;
-color: purple;
+color: #cb9ef1;
 }
 
 .btn-round {
@@ -22,7 +18,7 @@ color: purple;
 }
 
 .statistics {
-    background-color: purple;
+    background-color: #cb9ef1;
 }
 
 .stats-container {
