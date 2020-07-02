@@ -40,8 +40,6 @@ class Signin extends Component {
             password: this.state.signinPassword,
         };
 
-        console.log(user);
-
         axios.post('http://localhost:5000/signin/', user)
             .then(res => {
                 console.log(res.data);
