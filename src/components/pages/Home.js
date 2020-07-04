@@ -7,7 +7,7 @@ class Home extends Component {
     render() {
         document.body.style.backgroundColor = "#ffd1c3";
         return (
-            <div>
+            <div className="h-100">
                 <div className="justify-content-center align-items-center">
                     <div className="container px-md-3 px-sm-0">
                         <div className="col-lg-12 mb-4 text-white text-center">
@@ -18,15 +18,15 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="statistics justify-content-center align-items-center">
-                    <div className="stats-container px-md-3 px-sm-0">
-                        <h5 className="h5 pt-5 text-center text-white text-wrap">
+                <div className="quotes">
+                    <div className="quotes-container px-md-3">
+                        <h5 className="h5 py-5 my-5 text-white text-wrap mx-auto">
                             "quote 1...blah blah blah...."
                         </h5>
-                        <h5 className="h5 py-auto text-center text-white text-wrap">
+                        <h5 className="h5 py-5 my-5 text-white text-wrap">
                             "quote 2 ... blah blah blah..."
                         </h5>
-                        <h5 className="h5 py-auto text-center text-white text-wrap">
+                        <h5 className="h5 py-5 my-5 text-white text-wrap">
                             "quote 3 ... blah blah blah ...."
                         </h5>
                     </div>

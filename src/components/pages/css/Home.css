@@ -17,10 +17,10 @@ color: #cb9ef1;
     border-top: 1px solid white;
 }
 
-.statistics {
+.quotes {
     background-color: #cb9ef1;
 }
 
-.stats-container {
-    width: 600px;
+.quotes-container {
+    text-align: center;
 }
