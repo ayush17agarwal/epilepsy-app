@@ -27,6 +27,10 @@ const medicineSchema = new Schema({
     notes: {
         type: String,
         required: false,
+    },
+    rescueMed: {
+        type: Boolean,
+        required: true
     }
 });
 

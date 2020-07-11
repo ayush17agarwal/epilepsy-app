@@ -2,8 +2,6 @@ const router = require('express').Router();
 let Type = require('../models/type.model');
 let UserSession = require('../models/userSession.model');
 let User = require('../models/user.model');
-var ObjectId = require('mongodb').ObjectID;
-
 
 router.route('/add').post((req, res) => {
     const token = req.body.token;
@@ -111,7 +109,7 @@ router.route('/remove_all').delete((req, res) => {
             });
         }
         const session = sessions[0];
-        User.update({
+        User.updateOne({
             _id: session.userId
         }, {
             $pull : {types: {}}
