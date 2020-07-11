@@ -31,11 +31,13 @@ const userRouter = require('./routes/users');
 const signUpRouter = require('./routes/signUp');
 const signInRouter = require('./routes/signIn');
 const logOutRouter = require('./routes/logOut');
+const typeRouter = require('./routes/types');
 
 app.use('/user', userRouter);
 app.use('/signup', signUpRouter);
 app.use('/signin', signInRouter);
 app.use('/logout', logOutRouter);
+app.use('/type', typeRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

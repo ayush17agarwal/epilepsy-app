@@ -20,7 +20,7 @@ router.route('/name').get((req, res) => {
                     name: null
                 });
             }
-            if (users.length != 1) {
+            if (users.length !== 1) {
                 return res.send({
                     success: false,
                     message: 'Error: wrong user',

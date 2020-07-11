@@ -17,7 +17,7 @@ router.route('/verify').get((req, res) => {
                 message: 'Error: internal server error'
             });
         }
-        if (sessions.length != 1) {
+        if (sessions.length !== 1) {
             return res.send({
                 success: false,
                 message: 'Error: Wrong token id'
@@ -44,7 +44,7 @@ router.route('/').post((req, res) => {
                 message: 'Error: server error'
             });
         }
-        if (users.length != 1) {
+        if (users.length !== 1) {
             return res.send({
                 success: false,
                 message: 'Error: Invalid username'
@@ -63,7 +63,7 @@ router.route('/').post((req, res) => {
         userSession.userId = user._id;
         userSession.save()
             .then((doc) => {
-                res.json({
+                return res.send({
                     success: true,
                     message: "Session created!",
                     token: doc._id
