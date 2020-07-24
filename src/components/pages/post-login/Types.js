@@ -98,6 +98,7 @@ class Types extends Component {
         if(obj && obj.token) {
             const {token} = obj;
 
+            {/*TODO: Remove typeName != '' because required field added*/}
             if(this.state.newTypeName !== '') {
                 const type = {
                     token: token, 
@@ -176,7 +177,7 @@ class Types extends Component {
                                     <form>
                                         <div className="form-group">
                                             <label className="col-form-label">Name:</label>
-                                            <input type="text" className="form-control" value={newTypeName} onChange={this.onChangeName} id="type-name"/>
+                                            <input type="text" className="form-control" value={newTypeName} onChange={this.onChangeName} id="type-name" required/>
                                             <label className="col-form-label">Description:</label>
                                             <textarea className="form-control" value={newTypeDescription} onChange={this.onChangeDescription} id="type-description"></textarea>
                                         </div>
