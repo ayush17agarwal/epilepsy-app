@@ -21,7 +21,7 @@ const medicineSchema = new Schema({
         maxlength: 5
     },
     timesGiven: {
-        type: [String],
+        type: Number,
         required: true
     },
     notes: {

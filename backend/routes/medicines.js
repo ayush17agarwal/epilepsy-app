@@ -8,7 +8,7 @@ router.route('/add').post((req, res) => {
     const name = req.body.name;
     const dosage = Number(req.body.dosage);
     const dosageSuffix = req.body.dosageSuffix;
-    const timesGiven = req.body.timesGiven;
+    const timesGiven = Number(req.body.timesGiven);
     const notes = req.body.notes;
     const rescueMed = Boolean(req.body.rescueMed);
 
