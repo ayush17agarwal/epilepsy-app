@@ -47,7 +47,7 @@ router.route('/return').get((req, res) => {
         User.findById(session.userId)
             .then(user => {
                 return res.send({
-                    sucess: true,
+                    success: true,
                     message: "all types",
                     types: user.types
                 });

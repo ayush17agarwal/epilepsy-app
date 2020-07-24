@@ -86,7 +86,7 @@ class Signup extends Component {
         } = this.state;
 
         return (
-            <div className="text-center">
+            <div className="text-center-signup">
                 <h1 className="h1 my-5 font-weight-normal">Create your new account</h1>
                 {
                     (signupError) ? (<p>{signupError}</p>) : (null)

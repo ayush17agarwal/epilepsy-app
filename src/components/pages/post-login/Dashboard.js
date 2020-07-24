@@ -51,7 +51,7 @@ class Dashboard extends Component {
                 <div className="card-deck mb-3 justify-content-center">
                     <div className="card border col-md-4 text-center">
                         <div className="card-body">
-                            <h5 className="card-title">Your Common Types</h5>
+                            <h5 className="card-title">Your Types</h5>
                             <p className="card-text">Holy moly. Lorem blah blah</p>
                             <button className="btn btn-primary"><Link to="/types" className="nav_link">Types</Link></button>
                         </div>
