@@ -42,10 +42,7 @@ class Types extends Component {
                 console.log(res.data);
                 if(res.data.success) {
                     console.log(res.data.types);
-                    this.setState({types: res.data.types})
-                }
-                else {
-                    this.setState({typeError: res.data.message})
+                    this.setState({types: res.data.types});
                 }
             });
         }
@@ -98,7 +95,7 @@ class Types extends Component {
         if(obj && obj.token) {
             const {token} = obj;
 
-            {/*TODO: Remove typeName != '' because required field added*/}
+            /*TODO: Remove typeName != '' because required field added*/
             if(this.state.newTypeName !== '') {
                 const type = {
                     token: token, 
@@ -109,14 +106,13 @@ class Types extends Component {
                 axios.post('http://localhost:5000/type/add', type)
                     .then(res => {
                         if(res.data.success) {
-                            this.setState({newTypeName: '', newTypeDescription: ''});
+                            this.onClose();
                             window.location = '/types';
                         }
                     });
             }
             else {
                 window.alert("Name field cannot be empty");
-                window.location = '/types';
             }
         }
     }
@@ -133,8 +129,7 @@ class Types extends Component {
         });
     }
 
-    onClose(event) {
-        event.preventDefault();
+    onClose() {
         this.setState({newTypeName: '', newTypeDescription: ''});
     }
 
@@ -147,7 +142,7 @@ class Types extends Component {
             <div>
                 <h3 className="my-5 text-center">Types</h3>
                 <div className="justify-content-center">
-                    <table className="table table-hover table-striped">
+                    <table className="table-type table-hover table-striped">
                         <thead>
                             <tr>
                             <th scope="col">Name</th>

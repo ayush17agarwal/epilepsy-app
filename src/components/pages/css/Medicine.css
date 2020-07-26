@@ -1,0 +1,12 @@
+.note {
+    font-size: small;
+}
+
+.table-med {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.disabled-check {
+    background-color: #ffa990;
+}
