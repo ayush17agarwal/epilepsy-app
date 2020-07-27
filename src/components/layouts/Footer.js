@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
 
     return (
-        <footer id="sticky-footer" className="pt-4 mb-auto bg-secondary text-white=50">
+        <footer id="sticky-footer" className="pt-4 mb-auto bg-secondary text-white  ">
             <div className="container">
                 <div className="row">
                     <div className="col-md-3 col-sm-6 text-white pb-auto">
@@ -19,7 +19,7 @@ function Footer() {
                     </div>
                 </div>
                 <hr color="white" />
-                <div className="footer-bottom pt-auto pb-3">
+                <div className="footer-bottom py-auto">
                     <p className="text-xs-center text-white">
                         &copy; {new Date().getFullYear()} EPITracker | All Rights Reserved
                      </p>
